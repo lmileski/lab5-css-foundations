@@ -1,22 +1,60 @@
-h1 {
-  color: red;
-  font-size: 2.5rem;
+/* reset to prevent headaches - padding and border included in width */
+* { box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; /* listing backup fonts */
+  background: #f6f7fb;
+  color: #1f2937;
+  line-height: 1.5; /* spacing between lines */
 }
 
+/* setting reusable values as variables */
+:root { /* targets top element of page <html> tag */
+  --blue-1: #3da1ff;
+  --blue-2: #3864e8;
+  --btn: #4a63f5;
+  --btn-hover: #3c52e6;
+  --text: #1f2937;
+  --border: #d1d5db;
+  --container-radius: 1rem; /* for corner rounding */
+  --label-radius: 0.25rem;
+  --shadow: 0 1.5rem 2.5rem rgba(0,0,0,.08);
+}
+
+/* make custom tags take up full width and stack vertically */
+form-field, password-recovery { display: block; }
+
+/* lay out container as grid */
 .container {
-  display: flex
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  max-width: 70rem;
+  width: 90%;
+  margin: 5rem auto;
+  min-height: 75vh;
+  background: white;
+  border-radius: var(--container-radius);
+  box-shadow: var(--shadow); /* subtle shadow around edges */
+  overflow: hidden;
 }
 
+/* left side */
 #login-info {
-  flex: 1;
-  background-color: red;
+  background: linear-gradient(160deg, var(--blue-1), var(--blue-2));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vw;
+}
+#login-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+#login-info p {
+  font-size: 1.2rem;
+  max-width: 70ch;
+  margin: 0;
 }
 
-#login-form {
-  flex: 3;
-  background-color: yellow;
-}
-
-form-field {
-  display: block;
-}
