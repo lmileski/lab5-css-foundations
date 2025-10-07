@@ -58,3 +58,53 @@ form-field, password-recovery { display: block; }
   margin: 0;
 }
 
+/* right side */
+#login-form {
+  display: flex;
+  align-items: center;
+  padding: 4vw;
+}
+form {
+  width: 100%;
+  max-width: 30rem;
+}
+
+/* adds spacing to form-fields that follow a form-field */
+form-field + form-field { margin-top: 1.2rem; }
+
+label {
+  display: inline-block; /* behaves like inline element with padding/margins */
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* styles all input tags with either type attribute */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--label-radius);
+}
+
+/* styles the placeholder text of all input tags */
+input::placeholder {
+  color: #757b85;
+}
+
+/* styles input tags when they are focused */
+input:focus {
+  outline: none;
+  border-color: var(--blue-1);
+  box-shadow: 0 0 5px 0.2rem rgba(61,161,255,0.25);
+}
+
+form-submission {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
