@@ -57,15 +57,17 @@ lab5-css-foundations/
 ### **Rendering in Different Browsers**
 - **Google Chrome**
 
-![Rendered Page on Chrome](image.png)
+![Rendered Page on Chrome](RenderedPics/ChromeRendered.png)
 
 - **Microsoft Edge**
 
-![Rendered Page on Edge](image-1.png)
+![Rendered Page on Edge](RenderedPics/EdgeRendered.png)
 
 - **Safari from Mobile Device**
 
-<img src="image-2.png" width="40%" alt="Rendered Page on Safari from iPhone">
+<img src="RenderedPics/SafariRendered.png" width="40%" alt="Rendered Page on Safari from iPhone">
 
 ### **Reflections**
 As someone new to HTML and CSS, this lab proved incredibly beneficial to my understanding of how the technology works. After completing this lab, I can confidently say I have a good general idea of the way both languages interact. I'm excited to see how JS comes into play here and add interactivity to a site like this. One main takeaway I had from this lab was that it's easy for us to just skim over the details. I know realize that a good site requires immense attention to detail, which is a skill all web developers and software engineers in general must have.
+
+The main challenge I faced in this lab was knowing what syntax/steps I needed to take to fix a particular formatting issue. Working incrementally and using AI not to do the heavy lifting but rather to show me what CSS can do proved to be the method.
